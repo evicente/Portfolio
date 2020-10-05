@@ -5,91 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Technical Documentation</title>
+    <style>
+
+        * {
+        box-sizing: border-box;
+        }
+
+        a:link {
+        text-decoration: none;
+        }
+
+        a:visited {
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        }
+
+        a:active {
+        text-decoration: underline;
+        }
+
+         /* unvisited link */
+        a:link {
+        color: black;
+        }
+
+        /* mouse over link */
+        a:hover {
+        color: lightgray;
+        }
+
+        #navbar {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        #navbar > header {
+            padding-left: 10px;
+            padding-bottom: 10px;
+            background-color: lightslategray;
+        }
+
+        #navbar > a {
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: black solid 1px;
+        }
+
+        .main-section > header {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            background-color: lightslategray;
+            font-size: large;
+        }
+
+        @media only screen and (max-width: 768px){
+            #main-header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: white;
+                display: flex;
+                flex-flow: column wrap;
+            }
+
+            #main-doc {
+            padding-top: 300px;
+            }   
+        }
+
+
+        @media only screen and (min-width: 768px){
+
+            #main-header {
+                height: 100%;
+                width: 280px;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                overflow-x: hidden;
+                font-size: large;
+                border-right: black solid 1px;
+            }
+
+            #main-doc {
+                margin-top: 30px;
+                margin-left: 310px;
+                font-size: large;
+                padding: 0px 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="page-container">
+    <header id="main-header">
         <nav id="navbar">
-            <header>
-                <h1>
-                    Technical Documentation
-                </h1>
-            </header>
-            <div id="nav-links-section">
-                <a href="#SECTION_I" class="nav-link">SECTION I</a>
-                <a href="#SECTION_II" class="nav-link">SECTION II</a>
-                <a href="#SECTION_III" class="nav-link">SECTION III</a>
-                <a href="#SECTION_IV" class="nav-link">SECTION IV</a>
-                <a href="#SECTION_V" class="nav-link">SECTION V</a>
-                <a href="#SECTION_I" class="nav-link">SECTION I</a>
-                <a href="#SECTION_II" class="nav-link">SECTION II</a>
-                <a href="#SECTION_III" class="nav-link">SECTION III</a>
-                <a href="#SECTION_IV" class="nav-link">SECTION IV</a>
-                <a href="#SECTION_V" class="nav-link">SECTION V</a>
-                <a href="#SECTION_I" class="nav-link">SECTION I</a>
-                <a href="#SECTION_II" class="nav-link">SECTION II</a>
-                <a href="#SECTION_III" class="nav-link">SECTION III</a>
-                <a href="#SECTION_IV" class="nav-link">SECTION IV</a>
-                <a href="#SECTION_V" class="nav-link">SECTION V</a>
-            </div>
+            <header><h2>Technical Documentation</h2></header>
+            <a href="#SECTION_I" class="nav-link">SECTION I</a>
+            <a href="#SECTION_II" class="nav-link">SECTION II</a>
+            <a href="#SECTION_III" class="nav-link">SECTION III</a>
+            <a href="#SECTION_IV" class="nav-link">SECTION IV</a>
+            <a href="#SECTION_V" class="nav-link">SECTION V</a>
         </nav>
-        <main id="main-doc">
-            <section class="main-section" id="SECTION_I">
-                <header>SECTION I</header>
-                <p>SECTION I P CONTENT</p>
-                <p>SECTION I P2 CONTENT</p>
-                <code>INSERT CODE HERE</code>
-                <ul>
-                    <li>ITEM I</li>
-                    <li>ITEM II</li>
-                    <li>ITEM III</li>
-                </ul>
-            </section>
-            <section class="main-section" id="SECTION_II">
-                <header>SECTION II</header>
-                <p>SECTION II P CONTENT</p>
-                <p>SECTION II P2 CONTENT</p>
-                <code>INSERT CODE HERE</code>
-                <ul>
-                    <li>ITEM I</li>
-                    <li>ITEM II</li>
-                    <li>ITEM III</li>
-                </ul>
-            </section>
-            <section class="main-section" id="SECTION_III">
-                <header>SECTION III</header>
-                <p>SECTION III P CONTENT</p>
-                <p>SECTION III P2 CONTENT</p>
-                <code>INSERT CODE HERE</code>
-                <ul>
-                    <li>ITEM I</li>
-                    <li>ITEM II</li>
-                    <li>ITEM III</li>
-                </ul>
-            </section>
-            <section class="main-section" id="SECTION_IV">
-                <header>SECTION IV</header>
-                <p>SECTION IV P CONTENT</p>
-                <p>SECTION IV P2 CONTENT</p>
-                <code>INSERT CODE HERE</code>
-                <ul>
-                    <li>ITEM I</li>
-                    <li>ITEM II</li>
-                    <li>ITEM III</li>
-                </ul>
-            </section>
-            <section class="main-section" id="SECTION_V">
-                <header>SECTION V</header>
-                <p>SECTION V P CONTENT</p>
-                <p>SECTION V P2 CONTENT</p>
-                <code>INSERT CODE HERE</code>
-                <ul>
-                    <li>ITEM I</li>
-                    <li>ITEM II</li>
-                    <li>ITEM III</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+    </header>
+    <main id="main-doc">
+        <section class="main-section" id="SECTION_I">
+            <header>SECTION I</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet consectetur adipiscing elit duis. Leo a diam sollicitudin 
+                tempor id eu nisl nunc mi. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Vitae proin sagittis 
+                nisl rhoncus mattis rhoncus. Eget mi proin sed libero enim. Ultrices dui sapien eget mi proin sed libero enim sed. 
+                Lacus viverra vitae congue eu consequat ac. Porttitor leo a diam sollicitudin. A pellentesque sit amet porttitor 
+                eget dolor morbi non. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Ornare arcu odio ut 
+                sem nulla pharetra.</p>
+            <code><h3>Code Sample</h3></code>
+            <ul>
+                <li>Ut porttitor leo a diam sollicitudin tempor.</li>
+                <li>Leo a diam sollicitudin tempor id eu nisl nunc mi.</li>
+                <li>Urna nunc id cursus metus aliquam.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="SECTION_II">
+            <header>SECTION II</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet consectetur adipiscing elit duis. Leo a diam sollicitudin 
+                tempor id eu nisl nunc mi. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Vitae proin sagittis 
+                nisl rhoncus mattis rhoncus. Eget mi proin sed libero enim. Ultrices dui sapien eget mi proin sed libero enim sed. 
+                Lacus viverra vitae congue eu consequat ac. Porttitor leo a diam sollicitudin. A pellentesque sit amet porttitor 
+                eget dolor morbi non. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Ornare arcu odio ut 
+                sem nulla pharetra.</p>
+            <code><h3>Code Sample</h3></code>
+            <ul>
+                <li>Ut porttitor leo a diam sollicitudin tempor.</li>
+                <li>Leo a diam sollicitudin tempor id eu nisl nunc mi.</li>
+                <li>Urna nunc id cursus metus aliquam.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="SECTION_III">
+            <header>SECTION III</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet consectetur adipiscing elit duis. Leo a diam sollicitudin 
+                tempor id eu nisl nunc mi. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Vitae proin sagittis 
+                nisl rhoncus mattis rhoncus. Eget mi proin sed libero enim. Ultrices dui sapien eget mi proin sed libero enim sed. 
+                Lacus viverra vitae congue eu consequat ac. Porttitor leo a diam sollicitudin. A pellentesque sit amet porttitor 
+                eget dolor morbi non. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Ornare arcu odio ut 
+                sem nulla pharetra.</p>
+            <code><h3>Code Sample</h3></code>
+            <ul>
+                <li>Ut porttitor leo a diam sollicitudin tempor.</li>
+                <li>Leo a diam sollicitudin tempor id eu nisl nunc mi.</li>
+                <li>Urna nunc id cursus metus aliquam.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="SECTION_IV">
+            <header>SECTION IV</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet consectetur adipiscing elit duis. Leo a diam sollicitudin 
+                tempor id eu nisl nunc mi. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Vitae proin sagittis 
+                nisl rhoncus mattis rhoncus. Eget mi proin sed libero enim. Ultrices dui sapien eget mi proin sed libero enim sed. 
+                Lacus viverra vitae congue eu consequat ac. Porttitor leo a diam sollicitudin. A pellentesque sit amet porttitor 
+                eget dolor morbi non. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Ornare arcu odio ut 
+                sem nulla pharetra.</p>
+            <code><h3>Code Sample</h3></code>
+            <ul>
+                <li>Ut porttitor leo a diam sollicitudin tempor.</li>
+                <li>Leo a diam sollicitudin tempor id eu nisl nunc mi.</li>
+                <li>Urna nunc id cursus metus aliquam.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="SECTION_V">
+            <header>SECTION V</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet consectetur adipiscing elit duis. Leo a diam sollicitudin 
+                tempor id eu nisl nunc mi. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Vitae proin sagittis 
+                nisl rhoncus mattis rhoncus. Eget mi proin sed libero enim. Ultrices dui sapien eget mi proin sed libero enim sed. 
+                Lacus viverra vitae congue eu consequat ac. Porttitor leo a diam sollicitudin. A pellentesque sit amet porttitor 
+                eget dolor morbi non. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Ornare arcu odio ut 
+                sem nulla pharetra.</p>
+            <code><h3>Code Sample</h3></code>
+            <ul>
+                <li>Ut porttitor leo a diam sollicitudin tempor.</li>
+                <li>Leo a diam sollicitudin tempor id eu nisl nunc mi.</li>
+                <li>Urna nunc id cursus metus aliquam.</li>
+            </ul>
+        </section>
+    </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
