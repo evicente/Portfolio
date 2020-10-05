@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+/* mobile design section */
+#navbar {
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 25%;
+    overflow-y: auto;
+    border-bottom: gray solid 2px;
+}
+
+#navbar > header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+#nav-links-section {
+    padding-top: 75px;
+}
+
+#main-doc {
+    margin-top: 125px;
+}
+
+/* GUI Design Mobile */
+#navbar > header {
+    text-align: center;
+    border-bottom: gray solid 2px;
+}
+
+.nav-link {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: medium;
+    border-bottom: gray solid 1px;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightsteelblue;
+  }
+  
+  /* selected link */
+  a:active {
+    color: lightcyan;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
+
+/* high density devices rules */
+@media screen and (min-width: 1024px) {
+
+    #page-container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #navbar {
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
+
+    #main {
+        width: 80%;
+    }
+}
